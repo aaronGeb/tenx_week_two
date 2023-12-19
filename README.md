@@ -1,2 +1,2 @@
-## Data warehouse tech stack with MySQL, DBT, Airflow
+## Data warehouse with MySQL, DBT, Airflow
 
