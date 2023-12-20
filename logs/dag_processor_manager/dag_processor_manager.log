@@ -6832,3 +6832,9 @@ File Path                                                                       
 [2023-12-20T18:08:01.799+0000] {manager.py:741} INFO - There are 0 files in /opt/airflow/dags
 [2023-12-20T18:13:01.871+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
 [2023-12-20T18:13:01.882+0000] {manager.py:741} INFO - There are 0 files in /opt/airflow/dags
+[2023-12-20T18:18:02.859+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2023-12-20T18:18:02.873+0000] {manager.py:741} INFO - There are 0 files in /opt/airflow/dags
+[2023-12-20T18:23:03.557+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2023-12-20T18:23:03.575+0000] {manager.py:741} INFO - There are 0 files in /opt/airflow/dags
+[2023-12-20T18:28:04.469+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2023-12-20T18:28:04.471+0000] {manager.py:741} INFO - There are 0 files in /opt/airflow/dags
