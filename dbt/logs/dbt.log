@@ -1,0 +1,47 @@
+[0m12:54:32.568022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107310fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a537f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a57c280>]}
+
+
+============================== 12:54:32.570648 | 479e0064-9c54-40bc-84b2-2c45a30a1c15 ==============================
+[0m12:54:32.570648 [info ] [MainThread]: Running with dbt=1.7.4
+[0m12:54:32.571176 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'warn_error': 'None', 'target_path': 'None', 'write_json': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'log_path': 'logs', 'printer_width': '80', 'fail_fast': 'False', 'invocation_command': 'dbt init dbt', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'indirect_selection': 'eager', 'partial_parse': 'True', 'log_cache_events': 'False', 'no_print': 'None', 'static_parser': 'True', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'use_colors': 'True', 'profiles_dir': '/Users/Aaron/.dbt', 'version_check': 'True', 'log_format': 'default'}
+[0m12:54:32.571797 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/Aaron/.dbt')}
+[0m12:54:32.572041 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m12:55:12.667438 [debug] [MainThread]: Starter project path: /opt/homebrew/lib/python3.10/site-packages/dbt/include/starter_project
+[0m12:55:12.682040 [info ] [MainThread]: 
+Your new dbt project "_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:55:12.683144 [info ] [MainThread]: Setting up your profile.
+[0m12:55:43.885144 [error] [MainThread]: Encountered an error:
+list index out of range
+[0m12:55:43.890285 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.10/site-packages/dbt/cli/requires.py", line 90, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/dbt/cli/requires.py", line 75, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.10/site-packages/dbt/cli/main.py", line 515, in init
+    results = task.run()
+  File "/opt/homebrew/lib/python3.10/site-packages/dbt/task/init.py", line 344, in run
+    self.setup_profile(profile_name)
+  File "/opt/homebrew/lib/python3.10/site-packages/dbt/task/init.py", line 263, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "/opt/homebrew/lib/python3.10/site-packages/dbt/task/init.py", line 245, in ask_for_adapter_choice
+    return available_adapters[numeric_choice - 1]
+IndexError: list index out of range
+
+[0m12:55:45.267641 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 72.71337, "process_user_time": 1.307096, "process_kernel_time": 0.337862, "process_mem_max_rss": "106905600", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:55:45.270426 [debug] [MainThread]: Command `dbt init` failed at 12:55:45.270024 after 72.72 seconds
+[0m12:55:45.272144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107310fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5372e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a537490>]}
+[0m12:55:45.273531 [debug] [MainThread]: Flushing usage events
