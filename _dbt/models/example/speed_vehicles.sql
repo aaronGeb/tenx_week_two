@@ -1,11 +1,10 @@
 
 {{ config(materialized='view') }}
 
-with fast_vehicles as (
-    SELECT " car_type"
-    from trajectory t 
-    ORDER BY " avg_speed" DESC
-)
-
-
-SELECT * FROM fast_vehicles
+SELECT "type"
+FROM (
+    SELECT "type",
+    RANK() OVER (ORDER BY avg_speed DESC) as speed_rank
+    FROM trajectory
+) ranked_trajectories
+WHERE speed_rank <= 100
