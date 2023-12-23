@@ -4,8 +4,6 @@ from datetime import timedelta
 from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 
-# We're hardcoding this value here for the purpose of the demo, but in a production environment this
-# would probably come from a config file and/or environment variables!
 DBT_PROJECT_DIR = "../../opt/dbt/_dbt"
 DBT_PROFILE_DIR = "../../opt/_dbt/"
 
