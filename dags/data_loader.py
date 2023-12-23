@@ -5,12 +5,12 @@ from datetime import timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
-cwd = os.getcwd()
+#cwd = os.getcwd()
 sys.path.append(f"../tableManager/")
 sys.path.append(f"../temp_storage/")
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 from data_extraction import DataExtractor
-from tableManger import db_util
+from tableManger import dbt_util
 
 data_extractor = DataExtractor()
 
