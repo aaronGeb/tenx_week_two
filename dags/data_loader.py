@@ -4,12 +4,10 @@ from datetime import datetime
 from datetime import timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-
-#cwd = os.getcwd()
 sys.path.append(f"../tableManager/")
 sys.path.append(f"../temp_storage/")
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
-from data_extraction import DataExtractor
+from scripts.data_extraction import DataExtractor
 from tableManger import dbt_util
 
 data_extractor = DataExtractor()
@@ -61,7 +59,7 @@ with DAG(
     dag_id="data_loader_pg",
     default_args=default_args,
     description="this loads our data to the database",
-    start_date=datetime(2023, 12, 22, 3),
+    start_date=datetime(2023, 12, 21, 3),
     schedule_interval="@daily",
     catchup=False,
 ) as dag:
@@ -90,4 +88,4 @@ with DAG(
     [
         read_data,
         create_tables,
-    ] >> populate_vehicles >> clear_temp_vehicle_data, populate_vehicles >> populate_trajectory >> clear_temp_trajectory_data
+    ] >> populate_vehicles >> clear_temp_vehicle_data, populate_vehicles >> populate_trajectory

@@ -1,5 +1,5 @@
 import pandas as pd
-from logger import Logger
+from scripts.logger import Logger
 import sys
 from datetime import datetime
 
@@ -62,40 +62,8 @@ class DataExtractor:
 
         return chunked_list
 
-    def prepare_data_for_pandas(self, columns, all_data, id_prefix) -> tuple:
-        try:
-            trajectory_cols = columns[:4]
-            trajectory_rows = []
-
-            timed_vehicle_cols = ["track_id"] + columns[4:]
-            timed_vehicle_rows = []
-
-            for row in all_data:
-                try:
-                    items = row.replace("\n", "").split(";")
-                    items[0] = f"{id_prefix}_{items[0]}"
-                    trajectory_rows.append(items[:4])
-                    timed_vehicle_rows.extend(self.chunk_list(items[4:], 6, items[0]))
-                except Exception as e:
-                    # the try excepts here are for the airflow
-                    try:
-                        self.logger.error(
-                            f"Failed preparing data for pands at row {row}: {e}"
-                        )
-                    except:
-                        pass
-
-            return (trajectory_cols, trajectory_rows), (
-                timed_vehicle_cols,
-                timed_vehicle_rows,
-            )
-        except Exception as e:
-            # the try excepts here are for the airflow
-            try:
-                self.logger.error(f"Failed to prepare data for pandas: {e}")
-            except:
-                pass
     
+
     def prepare_data_frame(self, trajectory_data: tuple, timed_vehicle_data: tuple):
 
         try:
@@ -117,7 +85,7 @@ class DataExtractor:
                 self.logger.error(f"Failed to prepare data frame: {e}")
             except:
                 pass
-      
+
     def extract_data(self, file_name: str, return_json=False) -> pd.DataFrame:
         try:
             # set the day and time as unique identifier
@@ -147,3 +115,33 @@ class DataExtractor:
 
     def separate_data(self, file_name: str, chunk_size: int = 100):
         pass
+    def prepare_data_for_pandas(self, columns, all_data, id_prefix) -> tuple:
+        try:
+            trajectory_cols = columns[:4]
+            trajectory_rows = []
+
+            timed_vehicle_cols = ["track_id"] + columns[4:]
+            timed_vehicle_rows = []
+
+            for row in all_data:
+                try:
+                    items = row.replace("\n", "").split(";")
+                    items[0] = f"{id_prefix}_{items[0]}"
+                    trajectory_rows.append(items[:4])
+                    timed_vehicle_rows.extend(self.chunk_list(items[4:], 6, items[0]))
+                except SomeSpecificException as inner_exception:
+                # Handle the specific exception you expect
+                    self.logger.error(f"Failed preparing data for pandas at row {row}: {inner_exception}")
+                except AnotherSpecificException as inner_exception:
+                # Handle another specific exception if needed
+                    self.logger.error(f"Another specific exception occurred: {inner_exception}")
+                except Exception as inner_exception:
+                # Catch any other unexpected exceptions
+                    self.logger.error(f"Unexpected exception occurred: {inner_exception}")
+            
+            return (trajectory_cols, trajectory_rows), (timed_vehicle_cols, timed_vehicle_rows)
+
+        except Exception as outer_exception:
+        # Handle specific exceptions if needed
+            self.logger.error(f"Failed to prepare data for pandas: {outer_exception}")
+            return None  # or raise an exception, depending on your use case
