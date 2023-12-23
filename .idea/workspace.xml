@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77f6ba94-fc4f-4fd2-bc0b-50d286d6b0dd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/dbt/_dbt/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/_dbt/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/_dbt/analyses/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/_dbt/dbt_project.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/_dbt/macros/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/_dbt/models/example/my_first_dbt_model.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/_dbt/models/example/my_second_dbt_model.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/_dbt/models/example/schema.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/_dbt/profilees.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/_dbt/seeds/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/_dbt/snapshots/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/_dbt/tests/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/aar_dag.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbt/logs/dbt.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor_manager/dag_processor_manager.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor_manager/dag_processor_manager.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_bash_operator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_branch_datetime_operator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_branch_day_of_week_operator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_branch_labels.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_branch_operator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_branch_operator_decorator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_branch_python_dop_operator_3.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_complex.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_dag_decorator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_datasets.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_dynamic_task_mapping.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_external_task_marker_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_kubernetes_executor.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_latest_only.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_latest_only_with_trigger.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_local_kubernetes_executor.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_nested_branch_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_params_trigger_ui.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_params_ui_tutorial.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_passing_params_via_test_command.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_python_decorator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_python_operator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_sensor_decorator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_sensors.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_setup_teardown.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_setup_teardown_taskflow.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_short_circuit_decorator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_short_circuit_operator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_skip_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_sla_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_subdag_operator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_task_group.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_task_group_decorator.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_time_delta_sensor_async.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_trigger_controller_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_trigger_target_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_xcom.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/example_xcomargs.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/plugins/event_listener.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/plugins/listener_plugin.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/plugins/workday.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/subdags/subdag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/tutorial.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/tutorial_dag.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/tutorial_objectstorage.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/tutorial_taskflow_api.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2023-12-19/native_dags/example_dags/tutorial_taskflow_api_virtualenv.py.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/latest" beforeDir="false" afterPath="$PROJECT_DIR$/logs/scheduler/latest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/data_load.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/data_load.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/data_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/data_extraction.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ZtaigBshjWzEI3i2osrDzgSD97" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/Aaron/tenx_week_two",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77f6ba94-fc4f-4fd2-bc0b-50d286d6b0dd" name="Changes" comment="" />
+      <created>1703243958471</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703243958471</updated>
+      <workItem from="1703243960615" duration="297000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

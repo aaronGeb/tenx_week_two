@@ -1,0 +1,17 @@
+[2023-12-23T09:23:52.840+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_loader_pg.create_table manual__2023-12-23T09:23:51.420103+00:00 [queued]>
+[2023-12-23T09:23:52.845+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_loader_pg.create_table manual__2023-12-23T09:23:51.420103+00:00 [queued]>
+[2023-12-23T09:23:52.845+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2023-12-23T09:23:52.851+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): create_table> on 2023-12-23 09:23:51.420103+00:00
+[2023-12-23T09:23:52.856+0000] {standard_task_runner.py:60} INFO - Started process 229 to run task
+[2023-12-23T09:23:52.859+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'data_loader_pg', 'create_table', 'manual__2023-12-23T09:23:51.420103+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/data_loader.py', '--cfg-path', '/tmp/tmppfnfx3za']
+[2023-12-23T09:23:52.863+0000] {standard_task_runner.py:88} INFO - Job 48: Subtask create_table
+[2023-12-23T09:23:52.901+0000] {task_command.py:423} INFO - Running <TaskInstance: data_loader_pg.create_table manual__2023-12-23T09:23:51.420103+00:00 [running]> on host 305a147a108b
+[2023-12-23T09:23:53.239+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='aaron.2abrh@gmail.com' AIRFLOW_CTX_DAG_OWNER='Aaron' AIRFLOW_CTX_DAG_ID='data_loader_pg' AIRFLOW_CTX_TASK_ID='create_table' AIRFLOW_CTX_EXECUTION_DATE='2023-12-23T09:23:51.420103+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-23T09:23:51.420103+00:00'
+[2023-12-23T09:23:53.240+0000] {logging_mixin.py:188} INFO - Error creating table (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 8080 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 8080 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-12-23T09:23:53.285+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2023-12-23T09:23:53.344+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
