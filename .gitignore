@@ -1,2 +1,5 @@
 data/
 logs/
+ .DS_Store
+        dags/__pycache__/data_loader.cpython-38.pyc
+        dags/__pycache__/dbt_handler.cpython-38.pyc
