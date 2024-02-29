@@ -3,10 +3,13 @@ import sys
 from datetime import datetime
 from datetime import timedelta
 from airflow import DAG
-from airflow.operators.python import PythonOperator
+from airflow.operators.python_operator import PythonOperator
+scripts_dir = os.path.join(os.path.dirname(__file__), 'scripts')
+sys.path.append(scripts_dir)
 sys.path.append(f"../tableManager/")
 sys.path.append(f"../temp_storage/")
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+sys.path.append(os.path.abspath(os.path.join('../scripts')))
 from scripts.data_extraction import DataExtractor
 from tableManger import dbt_util
 

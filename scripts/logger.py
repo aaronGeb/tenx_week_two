@@ -6,7 +6,7 @@ class Logger:
     """Logger class for logging messages to a file."""
 
     def __init__(self, file_name: str = "logs.log", level=logging.INFO):
-        """Initilize logger class with file name to be written and default log level.
+        """Initialize logger class with file name to be written and default log level.
         Args:
             file_name(str): _description_
             basic_level(_type_, optional): _description_. Defaults to logging.INFO.

@@ -1,5 +1,5 @@
 import pandas as pd
-from logger import Logger
+from scripts.logger import Logger
 import sys
 from datetime import datetime
 
