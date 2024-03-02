@@ -3,7 +3,7 @@ import sys
 from datetime import datetime
 from datetime import timedelta
 from airflow import DAG
-from airflow.operators.python_operator import PythonOperator
+from airflow.operators.python import PythonOperator
 scripts_dir = os.path.join(os.path.dirname(__file__), 'scripts')
 sys.path.append(scripts_dir)
 sys.path.append(f"../tableManager/")
@@ -36,8 +36,10 @@ def populate__vehicles_table(ti):
 
 
 def populate_trajectory_table(ti):
-    vehicle_file_name = ti.xcom_pull(key="vehicle", task_ids="extract_from_file")
-    db_util.insert_to_table(vehicle_file_name, "vehicles", from_file=True)
+    vehicle_file_name = ti.xcom_pull(key="vehicle",
+                                      task_ids="extract_from_file")
+    db_util.insert_to_table(vehicle_file_name,
+                             "vehicles", from_file=True)
 
 def clear_memory_vehicle(ti):
     trajectory_file_name = ti.xcom_pull(key="trajectory", task_ids="extract_from_file")

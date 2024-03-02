@@ -19,7 +19,7 @@ default_args = {
 
 with DAG(
     "Model_dbt_dag",
-    start_date=datetime(2023, 12, 22),
+    start_date=datetime(2024, 3, 1),
     description="DAG that invokes dbt runs",
     schedule_interval=None,
     catchup=False,

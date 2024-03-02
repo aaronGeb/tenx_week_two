@@ -10,3 +10,5 @@ In collaboration with a municipal traffic department, I am actively involved in 
 - A data warehouse (PostgresQL)
 - An orchestration service (Airflow)
 - An ELT tool (dbt)
+- Visualization on Redash
+  
