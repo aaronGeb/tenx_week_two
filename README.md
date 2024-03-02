@@ -1,4 +1,5 @@
 # Data warehouse with MySQL, DBT, Airflow
+![](image/Screenshot%202024-03-02%20at%2019.52.12.png)
 
 In collaboration with a municipal traffic department, I am actively involved in the collection of traffic data through the deployment of swarm UAVs (drones) across diverse locations within the city.
 
@@ -9,3 +10,5 @@ In collaboration with a municipal traffic department, I am actively involved in 
 - A data warehouse (PostgresQL)
 - An orchestration service (Airflow)
 - An ELT tool (dbt)
+- Visualization on Redash
+  

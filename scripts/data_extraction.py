@@ -130,7 +130,7 @@ class DataExtractor:
                     trajectory_rows.append(items[:4])
                     timed_vehicle_rows.extend(self.chunk_list(items[4:], 6, items[0]))
                 except SomeSpecificException as inner_exception:
-                # Handle the specific exception you expect
+                # Handle the specific exception.
                     self.logger.error(f"Failed preparing data for pandas at row {row}: {inner_exception}")
                 except AnotherSpecificException as inner_exception:
                 # Handle another specific exception if needed
