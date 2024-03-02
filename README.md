@@ -12,3 +12,24 @@ In collaboration with a municipal traffic department, I am actively involved in 
 - An ELT tool (dbt)
 - Visualization on Redash
   
+
+
+## Getting Started
+1. **Clone the Repository:**
+  ```
+   $ git clone https://github.com/Xmuluneh/tenx_week_two
+   $ cd tenx_week_two
+   ```
+2.**Build and Run Airflow**
+  ```
+  $ docker-compose up --build
+  ```
+3.**Stop Airflow Services:**
+  ```
+  $ docker-compose down
+  ```
+# License
+
+This project is licensed under the [MIT LICENSE](LICENSE).
+
+Please feel welcome to contribute, offer feedback, or utilize the code as required!
