@@ -17,7 +17,7 @@ In collaboration with a municipal traffic department, I am actively involved in 
 ## Getting Started
 1. **Clone the Repository:**
   ```
-   $ git clone https://github.com/Xmuluneh/tenx_week_two
+   $ git clone https://github.com/aarongeb/tenx_week_two
    $ cd tenx_week_two
    ```
 2.**Build and Run Airflow**
